@@ -33,6 +33,12 @@ orgs.newOrg('dt.slm', 'eclipse-slm') {
       delete_branch_on_merge: false,
       web_commit_signoff_required: false,
     },
+    orgs.newRepo('aas-sdk') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      web_commit_signoff_required: false,
+    },
     orgs.newRepo('ansible') {
       allow_merge_commit: true,
       allow_update_branch: false,
@@ -57,6 +63,12 @@ orgs.newOrg('dt.slm', 'eclipse-slm') {
       delete_branch_on_merge: false,
       web_commit_signoff_required: false,
     },
+    orgs.newRepo('awx-client') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      web_commit_signoff_required: false,
+    },
     orgs.newRepo('awx-execution-environment') {
       allow_merge_commit: true,
       allow_update_branch: false,
@@ -64,6 +76,12 @@ orgs.newOrg('dt.slm', 'eclipse-slm') {
       web_commit_signoff_required: false,
     },
     orgs.newRepo('awx-jwt-authenticator') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      web_commit_signoff_required: false,
+    },
+    orgs.newRepo('consul-client') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
@@ -239,6 +257,12 @@ orgs.newOrg('dt.slm', 'eclipse-slm') {
       web_commit_signoff_required: false,
     },
     orgs.newRepo('slm-terraform') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      web_commit_signoff_required: false,
+    },
+    orgs.newRepo('vault-client') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
