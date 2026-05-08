@@ -125,6 +125,9 @@ orgs.newOrg('dt.slm', 'eclipse-slm') {
         orgs.newRepoSecret('RUNNER_PRIVATE_KEY') {
           value: "********",
         },
+        orgs.newRepoSecret('COVERALLS_REPO_TOKEN') {
+          value: "********",
+        },
       ],
       environments: [
         orgs.newEnvironment('build-core'),
@@ -168,6 +171,12 @@ orgs.newOrg('dt.slm', 'eclipse-slm') {
       web_commit_signoff_required: false,
     },
     orgs.newRepo('slm-ansible-role-node-exporter') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      web_commit_signoff_required: false,
+    },
+    orgs.newRepo('slm-ansible-role-python') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
